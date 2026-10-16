@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+torch
+transformers
+numpy
+librosa
+gTTS
+pydub
+g2p_en
+panphon
