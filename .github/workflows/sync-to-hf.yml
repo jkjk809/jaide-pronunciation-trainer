@@ -15,6 +15,6 @@ jobs:
           github_repo_id: ${{ github.repository }}
           huggingface_repo_id: froglover54/pronunciation-backend
           hf_token: ${{ secrets.HF_TOKEN }}
-          local_dir: backend 
+          subdirectory: backend
           repo_type: space
           space_sdk: docker
