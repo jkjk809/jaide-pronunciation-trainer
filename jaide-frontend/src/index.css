@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('[https://fonts.googleapis.com/css2?family=Geist:wght@300;400;600&display=swap](https://fonts.googleapis.com/css2?family=Geist:wght@300;400;600&display=swap)');
+@import url('[https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap](https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap)');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+body{
+    @apply text-slate-900;
+}
+@keyframes gradient-pan {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-pan 20s ease infinite;
+}
+
+@keyframes breathe {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(-8px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInKey {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background: rgb(16 185 129);
+    animation: bounceDots 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounceDots {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    30% {
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSentence {
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animate-fadeInSentence  {
+    animation: fadeIn 150ms ease-in forwards;
+}
