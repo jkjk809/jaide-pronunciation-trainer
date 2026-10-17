@@ -17,7 +17,7 @@ export default function PronunciationTraining() {
     const mediaRecorderRef = useRef(null);
     const audioChunksRef = useRef([]);
 
-    const API_BASE_URL = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
+    const API_BASE_URL = "https://froglover54-pronunciation-backend.hf.space";
 
     const nextSentence = async () => {
         try {
