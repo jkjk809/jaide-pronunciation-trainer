@@ -4,6 +4,7 @@ AI pronunciation tool that provides phonetic feedback and grading on speech inpu
 
 **Live Website:** [https://jaide-pronunciation-trainer.vercel.app](https://jaide-pronunciation-trainer.vercel.app)  
 **Live Backend API:** [https://froglover54-pronunciation-backend.hf.space/docs](https://froglover54-pronunciation-backend.hf.space/docs)
+![App Demo](./intro.png)
 
 ---
 
